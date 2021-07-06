@@ -1,0 +1,1 @@
+export const SET_BLOG_LIST = 'SET_BLOG_LIST'
