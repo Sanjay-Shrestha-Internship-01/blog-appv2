@@ -4,7 +4,7 @@ import { getBlogList} from './services/blog';
 import {connect} from 'react-redux';
 class App extends React.Component {
   componentDidMount(){
-    this.propsfetchBlogList()
+    this.props.fetchBlogList();
   }
   render(){
     return (
