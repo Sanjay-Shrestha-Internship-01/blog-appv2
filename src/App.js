@@ -2,15 +2,18 @@ import './App.css';
 import React from 'react';
 import { getBlogList} from './services/blog';
 import {connect} from 'react-redux';
+// import { BrowserRouter, Switch, Route, Link } from "react-router-dom";
+
 class App extends React.Component {
   componentDidMount(){
     this.props.fetchBlogList();
   }
-  render(){
+  render() {
     return (
       <div className="App">
-        {this.props.blogList.map(blog=>(
+        {this.props.blogList.map((blog)=>(
           <div>
+            
             <h3>{blog.title}</h3>
             <p>{blog.description}</p>
             <br />
@@ -24,6 +27,6 @@ class App extends React.Component {
 }
 const mapStateToProps = ({blogList})=>({blogList})
 const mapDispatchToProps = (dispatch)=> ({
-  fetchBlogList : ()=> dispatch(getBlogList())
-})
+  fetchBlogList : ()=> dispatch(getBlogList()),
+});
 export default connect(mapStateToProps, mapDispatchToProps)(App);

@@ -1,8 +1,7 @@
-const baseUrl = process.env.REACT_APP_REST_URL
+const baseUrl = process.env.REACT_APP_REST_URL;
 
-const config ={
-    baseUrl,
-    blogUrl: baseUrl+'/api/posts'
-
-}
+const config = {
+    
+    blogUrl: baseUrl + '/api/posts',
+};
 export default config;
