@@ -2,6 +2,7 @@ import './App.css';
 import React from 'react';
 import { getBlogList} from './services/blog';
 import {connect} from 'react-redux';
+import Login from './components/login';
 // import { BrowserRouter, Switch, Route, Link } from "react-router-dom";
 
 class App extends React.Component {
@@ -13,7 +14,7 @@ class App extends React.Component {
       <div className="App">
         {this.props.blogList.map((blog)=>(
           <div>
-            
+            <Login />
             <h3>{blog.title}</h3>
             <p>{blog.description}</p>
             <br />
