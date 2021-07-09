@@ -3,7 +3,7 @@ import blog from './blog';
 import { googleReducer } from "./google"
 const rootReducer = combineReducers({
     blogList: blog,
-    googleReducer
+    googleReducer,
 });
 
 export default rootReducer;

@@ -13,10 +13,10 @@ class Login extends Component {
     
     function LoginModal() {   
       return (
-        <>  
-          <Modal show={true}>
+        <div className="login-page">  
+          <Modal show={true} className="google-login">
             <Modal.Header>
-              <Modal.Title>Medium Tutorial</Modal.Title>
+              <Modal.Title></Modal.Title>
             </Modal.Header>
             <Modal.Body>
               <GoogleLogin
@@ -29,7 +29,7 @@ class Login extends Component {
               />              
             </Modal.Body>
           </Modal>
-        </>
+        </div>
       );
     }
 

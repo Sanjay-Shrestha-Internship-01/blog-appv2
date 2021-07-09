@@ -36,3 +36,45 @@
     transform: rotate(360deg);
   }
 }
+.login-page{
+  background-image: url('/src/images/Loki.jpg');
+  width: 943px;
+  height: 472px;
+  margin: 150px 250px;
+  position: relative;
+}
+.google-login{
+  position: absolute;
+  top: 320px;
+  left: 640px;
+}
+.navbar{
+  display: flex;
+  background-color: blue;
+  width: 100%;
+  padding: 10px 15px;
+}
+.navbar__header{
+  margin-right: auto;
+  background-color: rgb(22, 115, 190);
+  padding: 0px 8px;
+}
+.navbar__login{
+  margin-left: auto;
+}
+.user {
+  display: inline-flex;
+  align-items: center;
+}
+  .user-image {
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+  }
+  .login-button{
+    border: 1px solid white;
+    padding: 8px 10px;
+    background-color: transparent;
+    color: white;
+    border-radius: 4px;
+  }
