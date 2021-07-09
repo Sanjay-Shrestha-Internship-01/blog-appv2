@@ -51,8 +51,8 @@
 .navbar{
   display: flex;
   background-color: blue;
-  width: 100%;
-  padding: 10px 15px;
+  width: 100vwh;
+  padding: 5px 15px;
 }
 .navbar__header{
   margin-right: auto;
@@ -75,6 +75,51 @@
     border: 1px solid white;
     padding: 8px 10px;
     background-color: transparent;
+    color: white;
+    border-radius: 4px;
+  }
+  .blog-page{
+    width: 100vwh;
+    padding: 0 15px;
+    background-color: #96999c18;
+  }
+  .search {
+    background-color: white;
+    padding: 15px;
+    margin: 10px 0px;
+   
+  }
+  .input-search {
+    width: 100%;
+    padding: 8px 15px;
+    border: 1px solid gray;
+    outline: none;
+  }
+  .blog-post {
+    background-color: white;
+    padding: 15px;
+    margin: 10px 0px;
+    line-height: 25px;
+  }
+  .post-title {
+    color: #262729;
+    display: inline-block;
+    padding-right: 5px;
+    font-size: 20px;
+  }
+  .user-name {
+    color: white;
+    background-color: #e2c234;
+    padding: 0px 4px;
+    border-radius: 4px;
+  }
+  .post-description {
+    font-size: 12px;
+  }
+  .details-button {
+    border: 1px solid white;
+    padding: 8px 10px;
+    background-color: rgba(6, 6, 248, 0.658);
     color: white;
     border-radius: 4px;
   }

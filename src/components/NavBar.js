@@ -9,7 +9,7 @@ class Navbar extends Component {
     
     return (
       <div className="navbar">
-        <h1 className="navbar__header">Blog Post</h1>
+        <h2 className="navbar__header">Blog Post</h2>
         <div className="navbar__login">
           {isLoggedIn? (
             // <Link to="/logout">
